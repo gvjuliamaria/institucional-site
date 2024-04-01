@@ -1,0 +1,88 @@
+* {
+    /*Vamos tirar a estilização padrão*/
+    margin: 0;
+    padding: 0;
+    /*padding é sobre a distância dos elementos de DENTRO da div*/
+    box-sizing: border-box;
+    /*serve para considerar também a borda do elemento e não somente o conteúdo*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #222;
+    color: white;
+}
+
+.header {
+    width: 100%;
+    border-bottom: 2px solid #32b9cd;
+    height: 100px;
+}
+
+.container {
+    /*Diz respeito ao conteúdo/elementos de dentro*/
+    width: 80%;
+    margin: auto;
+    display: flex;
+    /*É sobre ELEMENTOS, ou seja, o elemento h2 e ol - Deixa um do lado do outro*/
+    justify-content: space-between;
+    align-items: center;
+    /*Deixou os itens no meio da div do ponto de vista vertical*/
+    height: 100%;
+}
+
+.navbar {
+    display: flex;
+    /*Deixa um do lado do outro*/
+    list-style: none;
+    /*Tira os pontos*/
+}
+
+.navbar li {
+    margin-right: 10px;
+    /*Da a distancia de um conteúdo pro outro*/
+}
+
+/* -- BANNER -- */
+.banner {
+    height: 300px;
+    background-image: url("imagens/bg-jelly-fish-para_outras_pags.png");
+}
+
+.banner .container {
+    justify-content: center;
+}
+
+.banner .container p{
+    font-size: 36px;
+    width: 350px;
+    text-align: center;
+}
+
+
+/* -- SOCIAL -- */
+
+.social{
+    height: auto;
+    background-color: #e5e5e5;
+    padding: 20px 0; /*Vamos descolar o conteúdo da borda*/
+}
+
+.social .container .card{
+    width: 200px;
+    color:#222;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /*Para deixar o conteúdo em coluna dnv*/
+    align-items: center;
+    text-align: center;
+    
+}
+
+.social .container .card img{
+    width: 100px;
+}
+
+.social .container .card h4{
+    font-size: 24px;
+}
