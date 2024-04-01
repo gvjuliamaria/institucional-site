@@ -45,7 +45,7 @@ body {
 
 /* -- BANNER -- */
 .banner {
-    height: 300px;
+    height: 100vh;/*Pra qualquer computador, vai pegar a tela 100%*/
     background-image: url("imagens/bg-jelly-fish-para_outras_pags.png");
 }
 
@@ -65,17 +65,18 @@ body {
 .social{
     height: auto;
     background-color: #e5e5e5;
-    padding: 20px 0; /*Vamos descolar o conteúdo da borda*/
+    padding: 30px 0; /*Vamos descolar o conteúdo da borda*/
 }
 
 .social .container .card{
     width: 200px;
     color:#222;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column; /*Para deixar o conteúdo em coluna dnv*/
     align-items: center;
     text-align: center;
+    height: 400px;
     
 }
 
