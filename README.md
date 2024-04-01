@@ -1,1 +1,1 @@
-# institucional_site
+# institucional-site
